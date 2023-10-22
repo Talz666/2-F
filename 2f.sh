@@ -38,6 +38,7 @@ ${cyan}[01]${black}.${yellow}Jadual
 ${cyan}[02]${black}.${yellow}Nama Murid
 ${cyan}[03]${black}.${yellow}Tentang Kelas${cyan}
 ${cyan}[04]${black}.${yellow}Edit Code
+${cyan}[05]${black}.${yellow}Matematik
 ${cyan}[00]${black}.${yellow}Keluar
 "
 
@@ -152,7 +153,13 @@ then
   echo -e "${green}Udah Ku Sep Masbro"
   sleep 1
   bash 2f.sh
-  
+
+#Matematik
+elif [ $pilihan = "5" ]
+then
+  clear
+  python3 math.py
+
 elif [ $pilihan = "0" ]
 then
   clear
